@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" Design By Narcotik http://skarnivore.propagande.org />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>" />
+<!-- RMV: added module header -->
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head>
+<body>
+<table class="skar" border="0" align="center" cellpadding="2" cellspacing="0">
+  <tr>
+    <td>
+<TABLE align=center WIDTH=100% BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD><IMG SRC="<{$xoops_url}>/themes/skarnivore/navbar_01.gif" WIDTH=25 HEIGHT=30></TD><TD background="<{$xoops_url}>/themes/skarnivore/navbar_02.gif" width=56% HEIGHT=30>&nbsp;</TD><TD><IMG SRC="<{$xoops_url}>/themes/skarnivore/navbar_03.gif" WIDTH=33 HEIGHT=30></TD><TD background="<{$xoops_url}>/themes/skarnivore/navbar_04.gif" width=54% HEIGHT=30 valign=bottom><table align=center><tr><td height=2></td></tr><tr><td><font color=#C0C0C0 size=1><b><a href="<{$xoops_url}>/modules/news/" class="mh">Articles</a>|<a href="<{$xoops_url}>/modules/agendax/" class="mh">Agenda</a>|<a href="<{$xoops_url}>/modules/news02/" class="mh">Chronique</a>|<a href="<{$xoops_url}>/modules/mydownloads/" class="mh">Téléchargements</a>|<a href="<{$xoops_url}>/modules/mylinks/" class="mh">Liens web</a>|<a href="<{$xoops_url}>/modules/xoopsfaq/" class="mh">FAQ</a>|<a href="<{$xoops_url}>/modules/contact/" class="mh">Contact</a></b></font></td></tr></table></TD><TD><IMG SRC="<{$xoops_url}>/themes/skarnivore/navbar_05.gif" WIDTH=14 HEIGHT=30></TD></TR></TABLE>
+<table cellspacing="0">
+        <tr id="header"> 
+          <td colspan="3" id="headerbanner"><table width="100%" border="0" cellpadding="0" cellspacing="0" >
+              <tr> 
+                <td id="headerbanner1"></td>
+              </tr>
+            </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td width="266" id="headerbanner"><a href="<{$xoops_url}>" class="mm"><img src="<{$xoops_url}>/themes/skarnivore/logo.gif" border=0><br>&nbsp;&nbsp;Le webzine du ska, rock et reggae Francophone</a></td><td id="headerbanner"><table bgcolor="#F95100" cellspacing="1" cellpadding="1" width=470 height=62 border=0><tr><td bgcolor="#383838"><div align="center"><{$xoops_banner}></div></td></tr></table></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td id="headerbar" background="<{$xoops_url}>/themes/skarnivore/bgtab1.gif" height=24>&nbsp;&nbsp;<font color=#F95100>>></font><{if $xoops_isuser}> Salut <a href="<{$xoops_url}>/user.php"><{$xoops_uname}></a>, <a href="<{$xoops_url}>/user.php">Votre compte</a> - <{else}><a href="<{$xoops_url}>/register.php">S'enregistrer</a> - <{/if}> <{if $xoops_isuser}><a href="<{$xoops_url}>/user.php?op=logout">Déconnexion</a><{else}><a href="<{$xoops_url}>/user.php">Login</a> 
+            <{/if}></td>
+          <td id="headerbar" background="<{$xoops_url}>/themes/skarnivore/bgtab1.gif" height=24> <form action="<{$xoops_url}>/search.php" method="post">
+              <div align="right"> 
+                <input type="text" class="input" name="query" size="12" />
+                <input type="hidden" name="action" value="results" />
+                <input name="submit" type="submit" class="button" value="search" />
+              </div>
+            </form></td>
+        </tr>
+      </table>
+      <table cellspacing="0" cellspading=0 background-color: #F7F9F9;>
+    <tr>
+      <td id="leftcolumn" bgcolor="#AEAEAE" width=150 height=100%>
+        <!-- Start left blocks loop -->
+        <{foreach item=block from=$xoops_lblocks}>
+          <{include file="skarnivore/theme_blockleft.html"}>
+        <{/foreach}>
+        <!-- End left blocks loop -->
+
+      </td>
+
+      <td id="centercolumn">
+
+        <!-- Display center blocks if any -->
+        <{if $xoops_showcblock == 1}>
+
+        <table cellspacing="0">
+          <tr>
+            <td id="centerCcolumn" colspan="2">
+
+            <!-- Start center-center blocks loop -->
+            <{foreach item=block from=$xoops_ccblocks}>
+              <{include file="skarnivore/theme_blockcenter_c.html"}>
+            <{/foreach}>
+            <!-- End center-center blocks loop -->
+
+            </td>
+          </tr>
+          <tr>
+            <td id="centerLcolumn">
+
+            <!-- Start center-left blocks loop -->
+              <{foreach item=block from=$xoops_clblocks}>
+                <{include file="skarnivore/theme_blockcenter_l.html"}>
+              <{/foreach}>
+            <!-- End center-left blocks loop -->
+
+            </td><td id="centerRcolumn">
+
+            <!-- Start center-right blocks loop -->
+              <{foreach item=block from=$xoops_crblocks}>
+                <{include file="skarnivore/theme_blockcenter_r.html"}>
+              <{/foreach}>
+            <!-- End center-right blocks loop -->
+
+            </td>
+          </tr>
+        </table>
+
+        <{/if}>
+        <!-- End display center blocks -->
+
+         <div id="content">
+          <{$xoops_contents}>
+        </div>
+
+        <br />
+		  
+      </td>
+
+      <{if $xoops_showrblock == 1}>
+
+      <td id="rightcolumn" bgcolor="#AEAEAE" width=150 height=100%>
+        <!-- Start right blocks loop -->
+        <{foreach item=block from=$xoops_rblocks}>
+          <{include file="skarnivore/theme_blockright.html"}>
+        <{/foreach}>
+        <!-- End right blocks loop -->
+      </td>
+
+      <{/if}>
+
+    </tr>
+  </table>
+
+  <table align="center" cellspacing="0">
+    <tr >
+          <td id="headerbar" background="<{$xoops_url}>/themes/skarnivore/bgtab1.gif" height=24><div align="center"><{$xoops_footer}></div></td>
+    </tr>
+  </table>
+  </td>
+  </tr>
+</table>
+
+</body>
+</html>
